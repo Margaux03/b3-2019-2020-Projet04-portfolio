@@ -1,18 +1,34 @@
 body{
-  background: black;
+  background: #003a19;
 
 }
 section{
-  min-height:98vh;
- border-bottom: #D2D2D2 2px solid white;
+
 }
 
 figure{
   margin-bottom: 3em;
 }
+
+header{
+margin-bottom: 1em;
+border-bottom: 2px;
+min-height: 50vh;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 h1{
 margin-bottom: 2em;
-border-bottom: 2px
+border-bottom: 2px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
 
 }
 
@@ -23,12 +39,15 @@ border-bottom: 2px
 
 }
 .project-feature{
-  border: 1px solid white;
-  margin: 1em;
-  padding: 1em;
+ margin: 2em;
+  padding: 2em;
   flex-basis: 320px;
   flex-grow: 1;
   flex-shrink: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
 }
 #main-menu {
   background: rgb(0, 127, 255);
@@ -38,7 +57,8 @@ border-bottom: 2px
   left: -300px;
   z-index: 999;
   height: 100%;
-  transition: 2s all ease;
+  transition: 1s all ease;
+
 
 }
 
@@ -54,7 +74,7 @@ border-bottom: 2px
   padding:1em;
   margin-bottom: 1px;
 }
-.menu-close{
+.close-menu{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,9 +90,14 @@ border-bottom: 2px
   right: 0;
 
 }
-.toggle-menu{
-  border: 1px solid #000;
+.menu-toggle{
+  display:block;
+  border-radius: 6px;
+  max-width: 120px
+  text-align: center;
+  border: 2px solid #ffffff;
   padding: 1em;
+
 }
 
 #main-menu:target + .backdrop{
@@ -84,6 +109,7 @@ border-bottom: 2px
   left: 0;
   z-index: 998;
   height: 100%;
+
 
 }
 
@@ -98,7 +124,7 @@ border-bottom: 2px
   justify-content: space-around;
   width:100%;
 }
-.toggle-menu {
+.menu-toggle {
   display: none;
 }
 }
